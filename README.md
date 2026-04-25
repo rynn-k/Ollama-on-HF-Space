@@ -1,3 +1,5 @@
+![Banner](https://napkinsdev.s3.us-east-1.amazonaws.com/next-s3-uploads/fc357383-1591-46da-8234-97e629211bfb/da2eff3db9d1.png)
+
 # Ollama-on-HF-Space
 
 Run Ollama with a lightweight REST API wrapper on Hugging Face Spaces using Docker. Exposes a simple HTTP interface to interact with local LLMs — list models, pull/delete models, and chat (with optional streaming).
