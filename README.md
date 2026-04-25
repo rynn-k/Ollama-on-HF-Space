@@ -4,15 +4,11 @@
 
 Run Ollama with a lightweight REST API wrapper on Hugging Face Spaces using Docker. Exposes a simple HTTP interface to interact with local LLMs — list models, pull/delete models, and chat (with optional streaming).
 
----
-
 ## Stack
 
 - **[Ollama](https://ollama.com/)** — local LLM runtime
 - **Node.js + Express** — REST API wrapper
 - **Docker** — containerized via HF Space
-
----
 
 ## Endpoints
 
@@ -40,8 +36,6 @@ Run Ollama with a lightweight REST API wrapper on Hugging Face Spaces using Dock
 
 Set `"stream": true` to receive a `text/event-stream` response.
 
----
-
 ## Environment Variables
 
 | Variable | Default | Description |
@@ -52,8 +46,6 @@ Set `"stream": true` to receive a `text/event-stream` response.
 
 > ⚠️ If `API_KEY` is not set, pull and delete operations will be **disabled**.
 
----
-
 ## Authentication
 
 Protected endpoints require a Bearer token in the `Authorization` header:
@@ -61,8 +53,6 @@ Protected endpoints require a Bearer token in the `Authorization` header:
 ```
 Authorization: Bearer your_api_key_here
 ```
-
----
 
 ## Model Recommendations
 
@@ -81,8 +71,6 @@ Authorization: Bearer your_api_key_here
 
 > 💡 On basic free spaces, stick to models **under 2GB** for reliable cold-start performance.
 
----
-
 ## Deploying to Hugging Face Spaces
 
 1. Create a new Space with **Docker** SDK
@@ -100,4 +88,4 @@ ollama pull gemma:2b  # replace with your preferred model
 
 ## License
 
-MIT
+[MIT](LICENSE)
